@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 import requests
 import os
 import sys
@@ -6,7 +8,8 @@ REPO_OWNER = 'Manjyyot'
 REPO_NAME = 'Building-CI-CD-Pipeline-Tool'
 GITHUB_API_URL = f'https://api.github.com/repos/{REPO_OWNER}/{REPO_NAME}/commits'
 
-LAST_COMMIT_FILE = '/home/your-username/devops/python/last_commit.txt'
+# Update this path to your desired location
+LAST_COMMIT_FILE = '/mnt/c/Users/tarun/devops/python/CI_CD/Building-CI-CD-Pipeline-Tool/last_commit.txt'
 
 def get_latest_commit():
     response = requests.get(GITHUB_API_URL)
